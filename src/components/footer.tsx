@@ -91,7 +91,7 @@ export default function Footer({ className }: { className?: string }) {
                   <h3 className="font-heading text-lg font-semibold text-foreground">Connect</h3>
                   <div className="space-y-3">
                     <a 
-                      href={siteConfig.socials.github} 
+                      href={siteConfig.creator.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-sm text-foreground/70 hover:text-foreground transition-colors duration-200 group"
@@ -99,32 +99,6 @@ export default function Footer({ className }: { className?: string }) {
                       <Icons.Github className="size-3 group-hover:scale-110 transition-transform duration-200" />
                       <span>GitHub</span>
                     </a>
-                    <a 
-                      href={siteConfig.socials.x} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-foreground/70 hover:text-foreground transition-colors duration-200 group"
-                    >
-                      <Icons.X className="size-3 group-hover:scale-110 transition-transform duration-200" />
-                      <span>X</span>
-                    </a>
-                  </div>
-                  
-                  <div className="pt-2">
-                    <p className="text-xs text-foreground/60 mb-2">Built by</p>
-                    <div className="space-y-1">
-                      {siteConfig.contributors.map((contributor) => (
-                        <a
-                          key={contributor.name}
-                          href={contributor.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block text-xs text-foreground/70 hover:text-foreground transition-colors duration-200"
-                        >
-                          {contributor.name}
-                        </a>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </div>

@@ -419,15 +419,9 @@ export default function AboutPage() {
                     <p className="text-sm text-foreground/70 mb-6">Full Stack Developer</p>
                     <div className="flex items-center justify-center gap-3">
                       <Button variant="outline" size="sm" asChild>
-                        <a href={contributor.github} target="_blank" rel="noopener noreferrer">
+                        <a href={contributor.github.url} target="_blank" rel="noopener noreferrer">
                           <Icons.Github />
                           GitHub
-                        </a>
-                      </Button>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={contributor.x} target="_blank" rel="noopener noreferrer">
-                          <Icons.X className="size-3" />
-                          X (Twitter)
                         </a>
                       </Button>
                       <Button variant="outline" size="sm" asChild>

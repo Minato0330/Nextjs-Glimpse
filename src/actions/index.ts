@@ -122,11 +122,14 @@ export async function generateResponse(data: z.infer<typeof promptSchema>, ip: s
 }
 
 async function generateTextToImage(prompt: string) {
+  // NOTE: Image generation requires a PAID tier account
+  // Free tier does NOT support image generation as of 2026
+  // You must upgrade your API key to paid tier to use this feature
   const response = await ai.models.generateContent({
-    model: "gemini-2.0-flash-preview-image-generation",
+    model: "gemini-2.5-flash-image",
     contents: prompt,
     config: {
-      responseModalities: [Modality.IMAGE, Modality.TEXT],
+      responseModalities: [Modality.IMAGE],
     },
   })
 
@@ -143,7 +146,7 @@ async function generateTextToImage(prompt: string) {
   for (const part of response.candidates?.[0]?.content.parts ?? []) {
     if (part.text) {
       result.text = part.text;
-    } else if (part.inlineData) { 
+    } else if (part.inlineData) {
       result.image = part.inlineData.data;
     }
   }

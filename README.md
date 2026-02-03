@@ -34,10 +34,10 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/sachigoyal/glimpsy.git
+git clone https://github.com/Minato0330/Nextjs-Glimpse.git
 
 # Navigate to project
-cd glimpsy
+cd Nextjs-Glimpse
 
 # Install dependencies
 bun install
@@ -54,23 +54,10 @@ bun dev
 
 ## 🌐 Live Demo
 
-Visit [glimpsy.sachii.dev](https://glimpsy.sachii.dev) to try it yourself - no signup required!
-
-## 👥 Contributors
-
-- **[Sachi Goyal](https://sachii.dev)** - [@sachigoyal](https://x.com/sachigoyal27)
-- **[Rudro](https://rdsx.dev)** - [@rudrodip](https://x.com/rds_agi)
+Visit [Minato0330-Glimpse.vercel.app](https://minato0330-glimpse.vercel.app) to try it yourself - no signup required!
 
 ## 📄 License
 
 [MIT License](./LICENSE)
 
 ---
-
-<div align="center">
-
-**[🌟 Try Glimpsy Now](https://glimpsy.sachii.dev)** • **[🐛 Report Issues](https://github.com/sachigoyal/glimpsy/issues)** • **[💬 Follow Updates](https://x.com/sachigoyal27)**
-
-*Built with ❤️ for creators worldwide*
-
-</div>
