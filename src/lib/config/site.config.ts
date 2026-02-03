@@ -5,9 +5,20 @@ export const siteConfig: SiteConfig = {
   title: "Glimpsy - Your Creative Assistant",
   description: "Glimpsy is a creative assistant that allows you to create images and text to speech.",
   origin: "https://minato0330-glimpse.vercel.app",
+  og: "https://minato0330-glimpse.vercel.app/og.png",
   keywords: ["image", "storage", "personal", "glimpsy", "generative ai", "ai", "gemini", "text-to-image", "text-to-speech"],
   creator: {
     name: "Minato0330",
     url: "https://github.com/Minato0330/Nextjs-Glimpse",
+  },
+  contributors: [
+    {
+      name: "Minato0330",
+      github: "https://github.com/Minato0330",
+      url: "https://github.com/Minato0330/Nextjs-Glimpse",
+    }
+  ],
+  socials: {
+    github: "https://github.com/Minato0330/Nextjs-Glimpse",
   }
 };
